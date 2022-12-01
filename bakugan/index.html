@@ -1,0 +1,63 @@
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakugan</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css" media="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="seleccion-bakugan">
+        <h1 class="titulo">Bakugan</h1>
+        <h2 class="subtitulo">Elige tu Bakugan</h2>
+        <div id="contenedorTarjetas" class="tarjetas">
+        </div>
+        <button class="button" id="boton-bakugan">Seleccionar</button>
+    </section>
+    <section id="seleccion-ataque">
+        <h1 class="titulo">Bakugan</h1>
+        <h2 class="subtitulo">Elige tu ataque</h2>
+        <div class="botones">
+            <button class="boton-ataque boton-ataque1" id="boton-pyrus">
+                <p>Flaming Uppercut 火</p>
+                <img src="./assets/pyrus-element.png" alt="Flaming Uppercut 火">
+            </button>
+            <button class="boton-ataque boton-ataque2" id="boton-aquos">
+                <p>Crushing Surf 水</p>
+                <img src="./assets/aquos-element.png" alt="Crushing Surf 水">
+            </button>
+            <button class="boton-ataque boton-ataque3" id="boton-subterra">
+                <p>Bonecrusher 土</p>
+                <img src="./assets/subterra-element.png" alt="">
+            </button>
+        </div> 
+         <div id="mensaje">
+            <p id="resultado">Suerte jugador</p>
+
+            <section id="seccion-reiniciar">
+                <button id="boton-reiniciar">Reiniciar</button>
+            </section>
+        </div>
+        <div class="ataques">
+            <div>
+                <p>Jugador</p>
+                <p id="vidas-jugador">3g</p>
+                <p id="bakugan-jugador"></p>
+                <div id="ataque-jugador"></div>
+            </div>
+            <div>
+                <p>Enemigo</p>
+                <p id="vidas-enemigo">3g</p>
+                <p id="bakugan-enemigo"></p>
+                <div id="ataque-enemigo"></div>
+            </div>
+        </div>
+    </section> 
+    <script src="brawl.js"></script>
+</body>
+</html>

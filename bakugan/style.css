@@ -1,0 +1,245 @@
+body {
+    font-family: 'Silkscreen', cursive;
+    background-color: #252323;
+}
+.titulo {
+    display: flex;
+    color: #FF6161;
+    font-size: 68px;
+    justify-content: center;
+}
+.subtitulo {
+    color: #ECA400;
+    font-size: 40px;
+}
+#seleccion-bakugan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+.tarjetas {
+    display: flex;
+    gap: 56px;
+    margin-bottom: 40px;
+}
+.tarjeta-bakugan {
+    box-sizing: border-box;
+    display: flex;
+    color: white;
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    padding: 16px;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 14px;
+    cursor: pointer;
+    background-color: #f84e4e;
+}
+.tarjeta-bakugan:nth-child(4) {
+    background-color: dodgerblue;
+}
+.tarjeta-bakugan:nth-child(6) {
+    background-color: sienna;
+}
+.tarjeta-bakugan:hover {
+    background-color: #ECA400;
+}
+.tarjeta-bakugan img {
+    width: 110px;
+}
+.tarjeta-bakugan:nth-child(4) img {
+    width: 120px;
+}
+.tarjeta-bakugan:nth-child(6) img {
+    width: 140px;
+}
+input {
+    display: none;
+}
+.inputCheck:checked + label {
+    background-color: #ECA400;
+}
+.button {
+    box-sizing: border-box;
+    font-family: 'Silkscreen', cursive;
+    background-color: #ECA400;
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    padding: 1px;
+    border: none;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #8EA8C3;
+}
+#seleccion-ataque {
+    width: 100%;
+    min-width: 320px;
+    flex-direction: column;
+    align-items: center;
+}
+.botones {
+    display: flex;
+    gap: 64px;
+}
+.boton-ataque {
+    display: flex;
+    width: 280px; 
+    height: 100px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Silkscreen', cursive;
+    color: white;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    align-items: center;
+    cursor: pointer;
+}
+.boton-ataque img {
+    height: 64px;
+}
+.boton-ataque3 img {
+    height: 66px;
+}
+.boton-ataque1 {
+    background-color: #f84e4e;
+}
+.boton-ataque1:hover {
+    background-color: #ff7164;
+}
+.boton-ataque2 {
+    background-color: dodgerblue;
+}
+.boton-ataque2:hover {
+    background-color: rgb(58, 179, 255);
+}
+.boton-ataque3 {
+    background-color: sienna;
+}
+.boton-ataque3:hover {
+    background-color: rgb(206, 106, 60);
+}
+#mensaje {
+    color: #252323;
+    box-sizing: border-box;
+    width: 344px;
+    background-color: #FDFFFC;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#boton-reiniciar {
+    height: 40px;
+    width: 120px;
+    border: none;
+    background-color: #ECA400;
+    color: #252323;
+    border-radius: 10px;
+    font-family: 'Silkscreen', cursive;
+    font-size: 16px;
+    cursor: pointer;
+}
+#boton-reiniciar:hover {
+    background-color: #8EA8C3;
+}
+.ataques {
+    color: #FDFFFC;
+    display: grid;
+    grid-template-columns: 220px 220px;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 24px;
+    margin: 15px 0 36px;
+}
+.ataques div p {
+    margin: 0;
+}
+#vidas-jugador, #vidas-enemigo {
+    font-size: 28px;
+}
+#bakugan-jugador, #bakugan-enemigo {
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+#ataque-jugador p, #ataque-enemigo p {
+    margin: 0 0 10px;
+}
+@media (max-width: 480px) {
+    body {
+        margin: 0;
+    }
+
+    .titulo {
+        font-size: 44px;
+        margin-bottom: 20px;
+    }
+    .subtitulo {
+        font-size: 24px;
+    }
+    #seleccion-bakugan {
+        text-align: center;
+    }
+    .tarjetas {
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .tarjeta-bakugan {
+        width: 90%;
+        height: 100px;
+        font-size: 14px;
+    }
+    .tarjeta-bakugan img {
+        width: 80px;
+    }
+    .tarjeta-bakugan:nth-child(4) img {
+        width: 82px;
+    }
+    .tarjeta-bakugan:nth-child(6) img {
+        width: 98px;
+    }
+    .button {
+        width: 70%;
+        height: 50px;
+        font-size: 16px;
+        margin-bottom: 36px;
+    }
+    .botones {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .boton-ataque {
+        box-sizing: border-box;
+        width: 200px;
+        height: 64px;
+        font-size: 12px;
+        padding: 12px;
+        gap: 4px;
+    }
+    .boton-ataque img {
+        height: 40px;
+    }
+    .boton-ataque3 img {
+        height: 44px;
+    }
+    #mensaje {
+        margin-top: 16px;
+        width: 280px;
+        font-size: 14px;
+    }
+    .ataques {
+        grid-template-columns: 128px 128px;
+        font-size: 14px;
+        gap: 20px;
+    }
+}
